@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.taskList {
+  margin: 10px 12.5px;
+  width: 150px;
+
+}
+
+.listName {
+  color: white;
+  padding: 2px 20px;
+  margin: 0px;
+  border-radius: .25em .25em 0em 0em;
+  text-align: center;
+
+
+}
+.taskList:nth-of-type(4n+1) .listName{
+  background: blue;
+  }
+.taskList:nth-of-type(4n+2) .listName{
+  background: orange;
+  }
+.taskList:nth-of-type(4n+3) .listName{
+  background: purple;
+  }
+.taskList:nth-of-type(4n+4) .listName{
+  background: green;
+  }
+
+
+.task {
+  border: 1px solid grey;
+  padding: 4px;
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftArrow,.rightArrow{
+  color: lightgrey;
+}
+.leftArrow:hover, .rightArrow:hover{
+  color: black;
+}
+.taskText {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.taskText:hover{
+  text-decoration: line-through;
+}
+
+.addNew{
+  color: lightgrey;
+  justify-content: center;
+  border-radius: 0em 0em .5em .5em;
+}
+
+input{
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  background-color: none;
+  border:none;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+input:hover{
+  background: lightgrey;
+ }
+
+.addNew:hover{
+  color: black;
+  background: lightgrey;
+  text-decoration: none;
+}
+
+.task:last-of-type {
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
